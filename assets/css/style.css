@@ -1,0 +1,102 @@
+
+.main-container {
+    margin: 2rem 1rem 0;
+    border: 2px solid white;
+    border-radius: 15px;
+    position: relative;
+    max-width: 736px;
+    z-index: 1;
+}
+
+.main-container::before {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/tresbolinhas.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 2rem;
+}
+
+.header-container img {
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header-content h1 {
+    font-family: "Neue Machina", cursive;
+    font-weight: 400;
+    font-size: 1.5rem;
+    max-width: 160px;
+}
+
+.header-content ul {
+    list-style: none;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.header-content ul li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.header-content ul li::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header-content ul .role::before {
+    background-image: url("../images/role.svg");
+}
+
+.header-content ul .location::before {
+    background-image: url("../images/location.svg");
+}
+
+.header-content ul .contact::before {
+    background-image: url("../images/contact.svg");
+}
+
+.header-content ul .mail::before {
+    background-image: url("../images/mail.svg");
+}
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+    }
+
+    .main-container {
+        margin: 2rem auto 0;
+    }
+}

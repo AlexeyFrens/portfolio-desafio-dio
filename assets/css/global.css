@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/NeueMachina-Regular.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: #000;
+    position: relative;
+}
+
+body::before, body::after {
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/gradient1.svg");
+    background-size: contain;
+}
+
+body::before {
+    top: 0;
+    left: 0;
+}
+
+body::after {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+h1, p, a, li{
+    color: rgba(255, 255, 255, 1);
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    body::before, body::after {
+        width: 600px;
+        height: 600px;
+    }
+}
