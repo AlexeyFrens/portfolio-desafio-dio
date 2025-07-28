@@ -13,7 +13,9 @@
 <body>
 <main class="main-container">
     <header class="header-container">
-        <img src="assets/images/my-photo.jpg" alt="Um homem com cabelo cacheado e vestindo uma camisa azul escuro">
+        <figure>
+            <img src="assets/images/my-photo.jpg" alt="Um homem com cabelo cacheado e vestindo uma camisa azul escuro">
+        </figure>
 
         <section class="header-content">
             <h1>Olá, <br> eu sou o João Cláudio</h1>
@@ -26,6 +28,85 @@
             </ul>
         </section>
     </header>
+
+    <section class="acordeon">
+        <button class="trigger" type="button"><span>Skills</span></button>
+
+        <section>
+            <div class="skills-container">
+                <h3>Habilidades Profissionais:</h3>
+                <ul>
+                    <li><img src="assets/images/skills-icons/html.svg" alt="Html Icon"></li>
+                    <li><img src="assets/images/skills-icons/css.svg" alt="CSS Icon"></li>
+                    <li><img src="assets/images/skills-icons/javascript.svg" alt="JavaScript Icon"></li>
+                    <li><img src="assets/images/skills-icons/java.svg" alt="Java Icon"></li>
+                    <li><img src="assets/images/skills-icons/mysql.svg" alt="MySQL Icon"></li>
+                    <li><img src="assets/images/skills-icons/react.svg" alt="React Icon"></li>
+                    <li><img src="assets/images/skills-icons/angular.svg" alt="Angular Icon"></li>
+                    <li><img src="assets/images/skills-icons/spring-boot.svg" alt="SpringBoot Icon"></li>
+                </ul>
+            </div>
+            <div class="hobby-container">
+                <h3>Habilidades Pessoais:</h3>
+                <ul>
+                    <li>Facilidades com tarefas práticas</li>
+                    <li>Comprometimento com resultados</li>
+                    <li>Organização</li>
+                    <li>Comunicação</li>
+                    <li>Trabalho em equipe</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <section class="acordeon">
+        <button class="trigger" type="button"><span>Idiomas</span></button>
+
+        <div class="languages-container">
+            <ul>
+                <li>Português (BR) - Fluente</li>
+                <li>Inglês - Básico</li>
+                <li>Espanhol - Básico</li>
+            </ul>
+        </div>
+    </section>
+    <section class="acordeon">
+        <button class="trigger" type="button"><span>Educação</span></button>
+
+        <div class="education-container">
+            <div>
+                <h3>dio.me</h3>
+                <p>junho de 2025 - Atual</p>
+            </div>
+            <div>
+                <h3>Senac São Paulo - Analise e Desenvolvimento de Sistemas</h3>
+                <p>julho de 2024 - dezembro de 2026</p>
+            </div>
+            <div>
+                <h3>Senac São Paulo - Ensino Médio Técnico Integrado, TI</h3>
+                <p>janeiro 2021 - dezembro de 2023</p>
+            </div>
+        </div>
+    </section>
+    <section class="acordeon">
+        <button class="trigger" type="button"><span>Portfolio</span></button>
+
+        <div class="portfolio-container">
+            <div>
+                <h3>Pokedex</h3>
+                <a target="_blank" href="https://github.com/AlexeyFrens/sistema-tanque-minado">https://github.com/AlexeyFrens/js-developer-pokedex</a>
+            </div>
+            <div>
+                <h3>Jogo Tanque Minado</h3>
+                <a target="_blank" href="https://github.com/AlexeyFrens/sistema-tanque-minado">https://github.com/AlexeyFrens/sistema-tanque-minado</a>
+            </div>
+            <div>
+                <h3>Discord Responsivo</h3>
+                <a target="_blank" href="https://github.com/AlexeyFrens/discord-responsivo">https://github.com/AlexeyFrens/discord-responsivo</a>
+            </div>
+        </div>
+    </section>
 </main>
+
+<script src="assets/js/button.js"></script>
 </body>
 </html>
