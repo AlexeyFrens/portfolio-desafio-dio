@@ -234,9 +234,12 @@
     width: 20px;
     height: 20px;
     margin-right: 10px;
-    background-image: url("../images/github.svg");
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.acordeon .portfolio-container div .github::before {
+    background-image: url("../images/github.svg");
 }
 
 @media screen and (min-width: 768px) {
