@@ -11,8 +11,6 @@ buttonTrigger.forEach(button => {
         }else {
             acordeon.classList.add('open');
             acordeon.scrollIntoView({ behavior: 'smooth', block: 'end' });
-            setTimeout(() => {
-            }, 300);
         }
     })
 })
