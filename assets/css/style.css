@@ -263,6 +263,10 @@
     max-width: 480px;
 }
 
+.acordeon .education-container .linked h3, .acordeon .education-container .linked p {
+    max-width: 160px;
+}
+
 .acordeon .education-container div p, .acordeon .portfolio-container div a{
     font-size: .8rem;
     overflow-wrap: anywhere
@@ -305,5 +309,9 @@
     .acordeon .languages-container ul {
         flex-direction: row;
         gap: 40px;
+    }
+
+    .acordeon .education-container .linked h3, .acordeon .education-container .linked p {
+        max-width: 480px;
     }
 }
