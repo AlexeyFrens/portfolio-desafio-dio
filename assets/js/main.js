@@ -46,13 +46,13 @@ function getLanguages(profileData) {
 function getEducations(profileData) {
     const edu = document.getElementById("profile.education")
     edu.innerHTML = profileData.education.map((item) => {
-        const link = item.link;
+        const hasLink = item.link && item.link.trim() !== "";
 
         return `
-            <div class="${link !== undefined ? 'linked' : ''}">
+            <div class="${hasLink ? 'linked' : ''}">
                 <h3>${item.name}</h3>
                 <p>${item.period}</p>
-                <a target="_blank" href="${link !== undefined ? item.link : '#'}"></a>
+                <a target="_blank" href="${hasLink ? item.link : '#'}"></a>
             </div>
         `
     }).join('')
