@@ -216,11 +216,51 @@
     color: white;
 }
 
+.acordeon .education-container .linked {
+    border: 3px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.acordeon .education-container .linked:hover {
+    background-color: rgba(40, 40, 40, 0.9);
+    transition: .25s ease-in-out;
+}
+
+.acordeon .education-container .linked a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.acordeon .education-container .linked::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/arrow-up-right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
 .acordeon .education-container div h3, .acordeon .portfolio-container div h3{
     display: flex;
     align-items: center;
     font-size: 1rem;
     font-weight: 800;
+}
+
+.acordeon .education-container div h3 {
+    max-width: 480px;
 }
 
 .acordeon .education-container div p, .acordeon .portfolio-container div a{
@@ -250,7 +290,7 @@
     }
 
     .main-container {
-        margin: 2rem auto 0;
+        margin: 2rem auto;
     }
 
     .acordeon section {

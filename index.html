@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -14,17 +15,17 @@
 <main class="main-container">
     <header class="header-container">
         <figure>
-            <img src="assets/images/my-photo.jpg" alt="Um homem com cabelo cacheado e vestindo uma camisa azul escuro">
+            <img src="assets/images/provisory-img.jpg" alt="provisory image" id="profile.photo">
         </figure>
 
         <section class="header-content">
-            <h1>Olá, <br> eu sou o João Cláudio</h1>
+            <h1>Olá, <br> eu sou o <br><span id="profile.name">João Cláudio</span></h1>
 
             <ul>
-                <li class="role">Junior Developer</li>
-                <li class="location">São Paulo - BR</li>
-                <li class="contact"><a href="tel:11959346426">(11) 95934-6426</a></li>
-                <li class="mail"><a href="mailto:joaocontatos56@gmail.com">joaocontatos56@gmail.com</a></li>
+                <li class="role" id="profile.job">Carregando...</li>
+                <li class="location" id="profile.location">Carregando...</li>
+                <li class="contact"><a href="" id="profile.phone">Carregando...</a></li>
+                <li class="mail"><a href="" id="profile.email">Carregando...</a></li>
             </ul>
         </section>
     </header>
@@ -35,25 +36,14 @@
         <section>
             <div class="skills-container">
                 <h3>Habilidades Profissionais:</h3>
-                <ul>
-                    <li><img src="assets/images/skills-icons/html.svg" alt="Html Icon"></li>
-                    <li><img src="assets/images/skills-icons/css.svg" alt="CSS Icon"></li>
-                    <li><img src="assets/images/skills-icons/javascript.svg" alt="JavaScript Icon"></li>
-                    <li><img src="assets/images/skills-icons/java.svg" alt="Java Icon"></li>
-                    <li><img src="assets/images/skills-icons/mysql.svg" alt="MySQL Icon"></li>
-                    <li><img src="assets/images/skills-icons/react.svg" alt="React Icon"></li>
-                    <li><img src="assets/images/skills-icons/angular.svg" alt="Angular Icon"></li>
-                    <li><img src="assets/images/skills-icons/spring-boot.svg" alt="SpringBoot Icon"></li>
+                <ul id="profile.hardSkills">
+                    Carregando...
                 </ul>
             </div>
             <div class="hobby-container">
                 <h3>Habilidades Pessoais:</h3>
-                <ul>
-                    <li>Facilidades com tarefas práticas</li>
-                    <li>Comprometimento com resultados</li>
-                    <li>Organização</li>
-                    <li>Comunicação</li>
-                    <li>Trabalho em equipe</li>
+                <ul id="profile.softSkills">
+                    Carregando...
                 </ul>
             </div>
         </section>
@@ -62,51 +52,29 @@
         <button class="trigger" type="button"><span>Idiomas</span></button>
 
         <div class="languages-container">
-            <ul>
-                <li>Português (BR) - Fluente</li>
-                <li>Inglês - Básico</li>
-                <li>Espanhol - Básico</li>
+            <ul id="profile.languages">
+                Carregando...
             </ul>
         </div>
     </section>
     <section class="acordeon">
         <button class="trigger" type="button"><span>Educação</span></button>
 
-        <div class="education-container">
-            <div>
-                <h3>dio.me</h3>
-                <p>junho de 2025 - Atual</p>
-            </div>
-            <div>
-                <h3>Senac São Paulo - Analise e Desenvolvimento de Sistemas</h3>
-                <p>julho de 2024 - dezembro de 2026</p>
-            </div>
-            <div>
-                <h3>Senac São Paulo - Ensino Médio Técnico Integrado, TI</h3>
-                <p>janeiro 2021 - dezembro de 2023</p>
-            </div>
+        <div class="education-container" id="profile.education">
+            Carregando...
         </div>
     </section>
     <section class="acordeon">
         <button class="trigger" type="button"><span>Portfolio</span></button>
 
-        <div class="portfolio-container">
-            <div>
-                <h3 class="github">Pokedex</h3>
-                <a target="_blank" href="https://github.com/AlexeyFrens/sistema-tanque-minado">https://github.com/AlexeyFrens/js-developer-pokedex</a>
-            </div>
-            <div>
-                <h3 class="github">Jogo Tanque Minado</h3>
-                <a target="_blank" href="https://github.com/AlexeyFrens/sistema-tanque-minado">https://github.com/AlexeyFrens/sistema-tanque-minado</a>
-            </div>
-            <div>
-                <h3 class="github">Discord Responsivo</h3>
-                <a target="_blank" href="https://github.com/AlexeyFrens/discord-responsivo">https://github.com/AlexeyFrens/discord-responsivo</a>
-            </div>
+        <div class="portfolio-container" id="profile.portfolio">
+            Carregando...
         </div>
     </section>
 </main>
 
 <script src="assets/js/button.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
