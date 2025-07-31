@@ -70,12 +70,12 @@ function getPortfolio(profileData) {
     }).join('')
 }
 
-// (async () => {
-//     const profileData = await getProfileData();
-//     getHeaderInformation(profileData);
-//     getSoftSkills(profileData);
-//     getHardSkills(profileData);
-//     getLanguages(profileData);
-//     getEducations(profileData);
-//     getPortfolio(profileData);
-// })()
+(async () => {
+    const profileData = await getProfileData();
+    getHeaderInformation(profileData);
+    getSoftSkills(profileData);
+    getHardSkills(profileData);
+    getLanguages(profileData);
+    getEducations(profileData);
+    getPortfolio(profileData);
+})()
