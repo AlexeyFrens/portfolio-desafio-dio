@@ -7,6 +7,12 @@
     src: url('../fonts/NeueMachina-Regular.otf');
 }
 
+@keyframes grow {
+    to {
+        transform: scale(1.5);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -51,6 +57,30 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+.loaders {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.loaders span:nth-child(1) {
+     animation: grow .8s infinite alternate;
+}
+
+.loaders span:nth-child(2) {
+    animation: grow .8s .3s infinite alternate;
+}
+
+.loaders span:nth-child(3) {
+    animation: grow .8s .6s infinite alternate;
+}
+
+.loader {
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 50%;
+    margin: 2px;
 }
 
 @media screen and (min-width: 768px) {
